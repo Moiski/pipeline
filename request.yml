@@ -1,0 +1,27 @@
+name: "Sample pipeline"
+description: "This is tutorial pipeline"
+tasks:
+  - name: "Build"
+    description: "Build sources"
+    action:
+      type: PRINT
+  - name: "Test"
+    description: "Test compiled code"
+    action:
+      type: RANDOM
+  - name: "Integration Test"
+    description: "Integration Testing"
+    action:
+      type: RANDOM
+  - name: "Docs"
+    description: "Generate docs"
+    action:
+      type: PRINT
+  - name: "Publish"
+    description: "Publish artifacts"
+    action:
+      type: RANDOM
+  - name: "Sync"
+    description: "Wait for completion"
+    action:
+      type: PRINT
